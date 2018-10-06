@@ -1,0 +1,25 @@
+1. 目的：measure the complex OAM spectrum
+   算法: mode matching
+   范畴：computational method
+
+
+2. 算法步骤1
+   2.1  目的：measure a series of pure OAM states
+   2.2  工具：CCD camera and M-Z interferometer
+   2.3  记录：expansion bases（将测得的OAM态作为 “展开基” 记录下来，也可以说成模板库）
+   2.4  备注：理论上，展开基里面应该包含所有的OAM态，实际上只需要几个就够了，根据你的情况（这个地方不明白你再问我吧）
+              对于一个OAM态，在计算机里面存储的就是一个二维矩阵（matlab看到的就是这个二维数据）
+
+
+3. 算法步骤2
+   3.1  问题：the light field under test（可能包含1个或者多个OAM态）
+   3.2  工具：CCD camera and M-Z interferometer
+   3.3  记录：利用3.2工具测量光场OAM，记录结果，方法与2.3一致，这一结果与2.3进行重叠积分计算
+
+
+4. 最后
+   4.1  目的：calculate OAM spectrum coefficient （1个或者多个OAM）
+   4.2  方法：重叠积分（对MATLAB应该是，二重积分，注意这里是数值积分）
+   4.3  计算：待测光场与之前2.3得到的展开基进行重叠积分
+
+   计算的公式在文章的后面，你应该能看明白
